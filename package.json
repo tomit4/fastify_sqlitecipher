@@ -1,0 +1,17 @@
+{
+    "name": "fastify",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node ./db/sqlite.js & nodemon index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@journeyapps/sqlcipher": "^5.2.0",
+        "fastify": "^3.21.6",
+        "nodemon": "^2.0.13"
+    }
+}

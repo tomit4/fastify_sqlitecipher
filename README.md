@@ -13,6 +13,7 @@ Rename the env-sample and input your own sensitive details
 `mv env-sample.txt .env`
 
 `npm run pug`
+
 `npm run start`
 
 ## Packages In This Project:
@@ -21,16 +22,27 @@ Frontend:
 Petite-Vue
 
 Backend:
+
 @journeyapps/sqlcipher
+
 nodemon
+
 dotenv
+
 fastify
+
 -fastify-formbody
+
 -fastify-static
+
 -fastify-jwt (going to probably just use cookies, had a hell of a time getting this NOT working)
+
 -fastify-auth (used in conjunction with fastify-jwt...)
+
 -fastify-plugin
 
 Developer Dependencies:
+
 nodemon
+
 pug

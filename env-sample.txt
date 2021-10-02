@@ -1,0 +1,5 @@
+PORT=5000
+HOST=localhost
+DB_TYPE=sqlite3
+DB_PASS=mysecret
+DB_NAME=test

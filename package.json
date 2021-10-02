@@ -4,14 +4,23 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "node ./db/sqlite.js & nodemon index.js"
+        "dev": "node ./db/sqlite.js & nodemon index.js",
+        "pug": "pug -w ./ -o ./html -P"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
         "@journeyapps/sqlcipher": "^5.2.0",
+        "dotenv": "^10.0.0",
         "fastify": "^3.21.6",
+        "fastify-auth": "^1.1.0",
+        "fastify-formbody": "^5.1.0",
+        "fastify-jwt": "^3.1.0",
+        "fastify-plugin": "^3.0.0",
+        "fastify-static": "^4.2.3"
+    },
+    "devDependencies": {
         "nodemon": "^2.0.13"
     }
 }

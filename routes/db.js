@@ -3,11 +3,12 @@ const db = require('../db/sqlite')
 module.exports = async fastify => {
     fastify.route({
         method: 'GET',
-        url: '/',
+        url: '/db',
+        //preHandler: fastify.auth[fastify.authenticate],
         handler: async (request, reply) => {
             reply.header('Content-Type', 'application/json')
             await db.all(`SELECT * FROM peoples`, [], (err, rows) => {
-                reply.send(rows)
+                return reply.send(rows)
             })
         },
     })

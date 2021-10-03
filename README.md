@@ -8,7 +8,7 @@ Nevertheless, some progress has been made in getting the cookie to hold onto the
 I find myself liking fastify and its malleable syntax, it can be written a bit like Hapi or Express.
 
 UPDATE on Petite-Vue: There is not alot of documentation about Petite_Vue, but I found a nice video by swildermuth that helped explain quite a bit:
-[Coding Shorts: Introducing petite-vue](https://www.youtube.com/results?search_query=petite-vue)
+[Coding Shorts: Introducing petite-vue](https://www.youtube.com/watch?v=YL9gkm-Ihpk)
 
 UPCOMING: Figure out how to redirect after cookie has been sent from POST route, get it to dynamically generate a list of people on the index.html with petite-vue.
 

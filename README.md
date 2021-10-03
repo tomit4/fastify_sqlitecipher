@@ -1,9 +1,16 @@
 # SQLiteCipher with Fastify
 
-Not Completed. Experimenting with JWT, Fastify, SQLiteCipher, Petite-Vue, and Pug. Lots to learn here, and not done yet. I have utilized fastify-jwt and am having difficulty understanding how to pass it back and forth between the server and the browser. Will probably just go with cookies instead...
+Not Completed. Experimenting with JWT, Fastify, SQLiteCipher, Petite-Vue, and Pug.
+UPDATE: I got a basic login functionality going where I can display the SQLiteCipher Database in JSON. I'm having some trouble figuring out how to redirect after the cookie creation is successful as I need to POST to a url that just creates a JWT and stores it in a session cookie. Fastify does not provide easily found documentation for how to redirect from a route that has produced authentication headers. I had considered a hacky way of doing this by redirecting from an empty HTML page, but that just felt wrong.
 
-Otherwise I like fastify and its malleable syntax, it can be written a bit like Hapi or Express.
-Petite-Vue... I have yet to play around more with it right now, original counter example remains as an example.
+Nevertheless, some progress has been made in getting the cookie to hold onto the JWT and pass that to other routes, now there is just the matter of displaying it on the front end and accomplishing logout funcitonality (perhaps fastify-session will be necessary...).
+
+I find myself liking fastify and its malleable syntax, it can be written a bit like Hapi or Express.
+
+UPDATE on Petite-Vue: There is not alot of documentation about Petite_Vue, but I found a nice video by swildermuth that helped explain quite a bit:
+[Coding Shorts: Introducing petite-vue](https://www.youtube.com/results?search_query=petite-vue)
+
+UPCOMING: Figure out how to redirect after cookie has been sent from POST route, get it to dynamically generate a list of people on the index.html with petite-vue.
 
 ## Installation:
 
@@ -35,11 +42,9 @@ fastify
 
 -fastify-static
 
--fastify-jwt (going to probably just use cookies, had a hell of a time getting this NOT working)
+-fastify-jwt
 
--fastify-auth (used in conjunction with fastify-jwt...)
-
--fastify-plugin
+-fastify-cookie
 
 Developer Dependencies:
 

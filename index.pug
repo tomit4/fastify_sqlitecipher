@@ -12,7 +12,7 @@ html(lang="en")
       div(v-scope="Counter({ initialCount: 1 })")
       div(v-scope="Counter({ initialCount: 2 })")
       br
-      form(action="/loggedin" method="post" onSubmit="token()")
+      form(action="/verify" method="post" onSubmit="token()")
         label(for="passwd") Password:
         br
         input(type="password" id="passwd" name="passwd" )

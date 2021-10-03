@@ -14,7 +14,7 @@
         "@journeyapps/sqlcipher": "^5.2.0",
         "dotenv": "^10.0.0",
         "fastify": "^3.21.6",
-        "fastify-auth": "^1.1.0",
+        "fastify-cookie": "^5.3.1",
         "fastify-formbody": "^5.1.0",
         "fastify-jwt": "^3.1.0",
         "fastify-plugin": "^3.0.0",

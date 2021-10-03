@@ -17,15 +17,17 @@ fastify.register(require('fastify-formbody'))
 
 fastify.register(require('fastify-jwt'), {
     secret: process.env.DB_PASS,
+    cookie: {
+        cookieName: 'token',
+    },
 })
+
+fastify.register(require('fastify-cookie'))
 
 // Register Routes
 fastify.register(require('./routes/login'))
 fastify.register(require('./routes/loggedin'))
-fastify.register(require('./routes/db'))
-
-//fastify.register(require('./middleware/auth_middleware'))
-fastify.register(require('./routes/authRouter'))
+fastify.register(require('./routes/verify'))
 
 // Start The Server
 fastify.listen(process.env.PORT, function (err, address) {

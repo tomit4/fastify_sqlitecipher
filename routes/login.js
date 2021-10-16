@@ -1,5 +1,3 @@
-const path = require('path')
-
 module.exports = async fastify => {
     fastify.route({
         method: 'GET',

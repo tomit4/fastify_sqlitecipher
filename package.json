@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "dev": "node ./db/sqlite.js & nodemon index.js",
-        "pug": "pug -w ./ -o ./html -P"
+        "pug": "pug -w ./ -o ./html -P",
+        "servepug": "npm run pug & live-server html"
     },
     "keywords": [],
     "author": "",

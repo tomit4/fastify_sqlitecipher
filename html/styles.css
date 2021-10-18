@@ -1,3 +1,31 @@
 body {
     text-align: center;
+    display: flexbox;
+    /*display: grid;*/
+    /*display flex;*/
+    /*display: inline-flexbox;*/
+    border: 1px;
+    border-style: dotted;
+    margin: 5rem 20rem 2rem 20rem;
+    padding: 10px 5px 10px 5px;
+    font-size: 125%;
+    color: pink;
+}
+
+h2 {
+    color: green;
+}
+
+h3 {
+    color: red;
+}
+
+p {
+    font-weight: 900;
+    color: blue;
+}
+
+button {
+    margin: 1px 1px 1px 1px;
+    border-radius: 7px;
 }
